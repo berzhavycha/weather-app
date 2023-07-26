@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather APP</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="weather-inner">
+            <div class="weather-input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Enter your location">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <!-- end of weather input -->
+            <div class="weather-content">
+                <div class="weather-success">
+                    <div class="weather-result-header">
+                        <img src="images/sunny.png" alt="">
+                        <p class="temperature">
+                            <span class="number">0
+                                <img src="images/celcius.png" alt="">
+                            </span>
+                        </p>
+                        <p class="desc">Sunny</p>
+                    </div>
+                     <!-- end of weather result header -->
+                    <div class="weather-result-bottom">
+                        <div class="bottom-block">
+                            <i class="fa-solid fa-water"></i>
+                            <div class="bottom-block-desc">
+                                <span class="humidity">88%</span>
+                                <span>Humidity</span>
+                            </div>
+                        </div>
+                         <!-- end of weather bottom block -->
+                        <div class="bottom-block">
+                            <i class="fa-sharp fa-solid fa-wind"></i>
+                            <div class="bottom-block-desc">
+                                <span class="speed">0Km/h</span>
+                                <span>Wind Speed</span>
+                            </div>
+                        </div>
+                        <!-- end of weather bottom block -->
+                    </div>
+                    <!-- end of weather result bottom -->
+                </div>
+                <div class="weather-failure">
+                    <img src="images/404-landing-page-free-vector.png" alt="">
+                    <p>OOPS! Something went wrong</p>
+                </div>
+                <!-- end of weather success -->
+            </div>
+            <!-- end of weather content -->
+        </div>
+        <!-- end of weather input -->
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
